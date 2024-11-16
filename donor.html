@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donor's Detail</title>
+    <link rel="stylesheet" href="donor.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h1>BloodManagers</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Donor</a></li>
+                    <li><a href="#">Patient</a></li>
+                    <li><a href="#">Admin</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="logout">Logout <img src="logout.png" alt="" height="15px" width="15px">
+            </aside>
+        </aside>
+
+        <main class="content">
+            <h2>Donor's Detail</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Photo</th>
+                        <th>Blood Group</th>
+                        <th>Address</th>
+                        <th>Contact</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="donorTable">
+                    <tr>
+                        <td>Haseeb Raza</td>
+                        <td><img src="donor1.jpg" alt="Donor Photo"></td>
+                        <td>O+</td>
+                        <td>E-470 st 2 Block E Nishat Colony</td>
+                        <td>03091845773</td>
+                        <td>
+                            <button class="edit" onclick="editDonor(this)">Edit</button>
+                            <button class="delete" onclick="deleteDonor(this)">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ibrahim Nadeem</td>
+                        <td><img src="donor2.jpg" alt="Donor Photo"></td>
+                        <td>O+</td>
+                        <td>E-470 st 2 Block E Nishat Colony</td>
+                        <td>03091845773</td>
+                        <td>
+                            <button class="edit" onclick="editDonor(this)">Edit</button>
+                            <button class="delete" onclick="deleteDonor(this)">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Poss Poss</td>
+                        <td><img src="donor3.jpg" alt="Donor Photo"></td>
+                        <td>A+</td>
+                        <td>ITU</td>
+                        <td>911</td>
+                        <td>
+                            <button class="edit" onclick="editDonor(this)">Edit</button>
+                            <button class="delete" onclick="deleteDonor(this)">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </div>
+
+    <script src="donor.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7e9c8; /* Beige background */
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #e6e2a5; /* Light yellow for the sidebar */
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.sidebar h1 {
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: 'Brush Script MT', cursive; /* Mimic script font from image */
+}
+
+.sidebar nav ul {
+    list-style: none;
+}
+
+.sidebar nav ul li {
+    margin: 15px 0;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    display: block;
+}
+
+.sidebar nav ul li a:hover {
+    color: #a22c2c; /* Dark red hover */
+}
+
+.logout {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    color: #333;
+    text-decoration: none;
+}
+
+.logout span {
+    font-size: 16px;
+    color: #a22c2c;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #fff7e6; /* Light beige for main content */
+}
+
+.content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #a2c47f; /* Light green for header */
+    color: #fff;
+}
+
+table td img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.edit {
+    background-color: #4CAF50; /* Green button */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete {
+    background-color: #f44336; /* Red button */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.edit:hover {
+    background-color: #45a049;
+}
+
+.delete:hover {
+    background-color: #d32f2f;
+}

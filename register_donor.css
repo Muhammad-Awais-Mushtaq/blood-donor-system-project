@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: url(back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px;
+  }
+  
+  .registration-form {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .logo {
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(220, 20, 60, 0.2);
+  }
+  
+  .blood-drop {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    background: crimson;
+    border-radius: 0 50% 50% 50%;
+    transform-origin: 0 0;
+    animation: rotate 2s infinite linear;
+  }
+  
+  @keyframes rotate {
+    0% { transform: translate(-50%, -50%) rotate(45deg); }
+    100% { transform: translate(-50%, -50%) rotate(405deg); }
+  }
+  
+  .form-header h1 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .form-header p {
+    color: #666;
+    font-size: 16px;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    flex: 1;
+  }
+  
+  .form-group.full-width {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e1e1e1;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+  }
+  
+  input:focus, select:focus, textarea:focus {
+    border-color: crimson;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(220, 20, 60, 0.1);
+  }
+  
+  textarea {
+    height: 100px;
+    resize: vertical;
+  }
+  
+  .file-upload {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .file-upload input[type="file"] {
+    display: none;
+  }
+  
+  .file-label {
+    background: crimson;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+  }
+  
+  .file-label:hover {
+    background: #b01030;
+  }
+  
+  .file-name {
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .checkbox-container input {
+    width: auto;
+    margin-right: 10px;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 14px;
+    background: crimson;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .submit-btn:hover {
+    background: #b01030;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(220, 20, 60, 0.2);
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+        margin: 10px;
+    }
+  
+    .registration-form {
+        padding: 20px;
+    }
+  
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+  
+    .form-group {
+        margin-bottom: 20px;
+    }
+  
+    .form-header h1 {
+        font-size: 24px;
+    }
+  }
+  

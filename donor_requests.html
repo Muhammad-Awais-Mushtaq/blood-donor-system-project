@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="content">
+        <!-- Check Donor Requests Section -->
+        <div class="table-container">
+            <h1>Check Donor Requests</h1>
+            <table id="donorsTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Photo</th>
+                        <th>Blood Group</th>
+                        <th>Address</th>
+                        <th>Contact</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Donor rows will be populated here dynamically by JS -->
+                </tbody>
+            </table>
+        </div>
+
+
+
+
+        <script src="check_donors.js"></script> <!-- Script to handle donor requests -->
+        <script src="registered_donors.js"></script> <!-- Script to display approved donors -->
+        
+        <script>
+            // Toggle between showing Registered Donors and Registered Patients
+            document.getElementById("showRegisteredDonorsBtn").addEventListener("click", function() {
+                document.getElementById("patientsContainer").style.display = "none";
+                document.getElementById("registeredDonorsTable").style.display = "block";
+                document.getElementById("showRegisteredDonorsBtn").style.backgroundColor = "#4CAF50"; // Active state
+                document.getElementById("showRegisteredPatientsBtn").style.backgroundColor = ""; // Reset
+            });
+    
+            document.getElementById("showRegisteredPatientsBtn").addEventListener("click", function() {
+                document.getElementById("patientsContainer").style.display = "block";
+                document.getElementById("registeredDonorsTable").style.display = "none";
+                document.getElementById("showRegisteredDonorsBtn").style.backgroundColor = ""; // Reset
+                document.getElementById("showRegisteredPatientsBtn").style.backgroundColor = "#4CAF50"; // Active state
+            });
+        </script>
+</body>
+</html>

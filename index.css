@@ -1,0 +1,71 @@
+/* Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7e9c8; /* Light beige background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Sign-in Container */
+.signin-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Sign-in Box */
+.signin-box {
+    background-color: #f5f0d5; /* Light yellow box */
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    color: #a22c2c; /* Dark red */
+    cursor: pointer;
+}
+
+/* User Icon */
+.icon img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+/* Heading Styling */
+h2 {
+    margin-bottom: 20px;
+    color: #a22c2c; /* Dark red */
+}
+
+/* Buttons Styling */
+.buttons button {
+    background-color: #f5e9b8; /* Light yellow button */
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    width: 100%;
+    font-size: 16px;
+    color: #333;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buttons button:hover {
+    background-color: #d4c07f; /* Slightly darker on hover */
+}

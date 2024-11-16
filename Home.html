@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   <!-- bootstrap link-->
+   
+
+    <title>Blood Donor System</title>
+</head>
+
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+          <a href="#" class="logo">Blood Donor System</a>
+          <button class="menu-toggle" aria-label="Toggle menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <!-- <li><a href="#our-team">Our Team</a></li> -->
+            <!-- <li><a href="#how-it-works">How it Works</a></li> -->
+            <!-- <li><a href="#services">Services</a></li> -->
+            <li><a href="#contact-us">Contact Us</a></li>
+      
+            <!-- Login Dropdown -->
+            <li class="login-dropdown">
+              <a href="#">Login</a>
+              <ul class="dropdown">
+                <li><a href="/DONOR/login_donor.html">Donor Login</a></li>
+                <li><a href="/PATIENT/login_patient.html">Recipient Login</a></li>
+                <li><a href="/ADMIN/ADMIN/index.html">Admin Login</a></li>
+              </ul>
+            </li>
+      
+            <!-- Register Dropdown -->
+            <li class="register-dropdown">
+              <a href="#">Register</a>
+              <ul class="dropdown">
+                <li><a href="/DONOR/register_donor.html">Donor Register</a></li>
+                <li><a href="/PATIENT/register_patient.html">Recipient Register</a></li>
+              </ul>
+            </li>
+      
+            <!-- Many More Dropdown -->
+            <li class="many_more">
+              <a href="#">Many More</a>
+              <ul class="dropdown">
+                <!-- <li><a href=""></a></li> -->
+                <li><a href="#how-it-works">How it Works</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#our-team">Our Team</a></li>
+              </ul>
+            </li>
+      
+            <!-- Admin Dashboard Link -->
+            <li><a href="/ADMIN/dashboard.html" class="admin-dashboard">Admin Dashboard</a></li>
+          </ul>
+        </div>
+      </nav>
+      
+        <!-- Background section -->
+<div class="background-section">
+    <div class="text-overlay">
+        <h1> Saving Lives Together</h1>
+        <p>Every drop counts in our mission to help those in need</p>
+            
+            <!-- <span class="blood-drop"></span> This will display the image after the sentence  -->
+       
+    </div>
+</div>
+
+ <!-- Stats Section -->
+ <section class="stats">
+    <div class="stat-card">
+        <i class="fas fa-users"></i>
+        <h3>10,000+</h3>
+        <p>Registered Donors</p>
+    </div>
+    <div class="stat-card">
+        <i class="fas fa-hospital"></i>
+        <h3>100+</h3>
+        <p>Partner Hospitals</p>
+    </div>
+    <div class="stat-card">
+        <i class="fas fa-tint"></i>
+        <h3>15,000+</h3>
+        <p>Lives Saved</p>
+    </div>
+    <div class="stat-card">
+        <i class="fas fa-award"></i>
+        <h3>1,000+</h3>
+        <p>Monthly Donations</p>
+    </div>
+</section>
+
+<!-- this is slider  -->
+<div class="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="sli1.jpg" alt="First Slide">
+        <div class="carousel-caption">
+          <h3>Welcome to the Blood Donor System</h3>
+          <p>Donate blood, save lives. Be a hero today.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="sli2.jpg" alt="Second Slide">
+        <div class="carousel-caption">
+          <h3>Why Donate Blood?</h3>
+          <p>Your blood can save someone's life. Join us in making a difference.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="sli3.jpg" alt="Third Slide">
+        <div class="carousel-caption">
+          <h3>Easy Registration</h3>
+          <p>Sign up now to become a donor and help those in need.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+    <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+    <div class="carousel-indicators">
+      <button class="active" onclick="gotoSlide(0)"></button>
+      <button onclick="gotoSlide(1)"></button>
+      <button onclick="gotoSlide(2)"></button>
+    </div>
+  </div>
+  
+
+
+        <!--Below Background images-->
+        <div class="images-section">
+            <div class="card">
+                <div class="image image1"></div>
+                <p class="image-text">A healthcare professional holds a test tube with blue liquid, symbolizing blood
+                    analysis in the lab. Testing is essential in the blood donation process to ensure donor-recipient
+                    compatibility and safety.</p>
+            </div>
+            <div class="card">
+                <div class="image image2"></div>
+                <p class="image-text">A healthcare professional carefully draws a blood sample, a crucial step in the
+                    blood donation process. Blood collection ensures accurate testing and safe transfusion practices.
+                    This procedure emphasizes the commitment to donor and recipient safety.</p>
+            </div>
+            <div class="card">
+                <div class="image image3"></div>
+                <p class="image-text"> A healthcare professional in protective gear, including gloves and a lab coat,
+                    holds a test tube filled with blood.
+                    The setup includes medical tools such as a thermometer, syringe, and a COVID-19 test form on a
+                    clipboard.
+                </p>
+            </div>
+        </div>
+
+
+
+
+        <!-- About Us -->
+
+        <section class="about-us" id="about-us">
+            <div class="about-content">
+                <h2>About Us</h2>
+                <p>
+                    <span class="word">W</span>elcome to our Blood Donation System, a platform dedicated to connecting
+                    blood donors with those in
+                    need.
+                    Our mission is to facilitate safe and efficient blood donation, ensuring that recipients receive the
+                    right
+                    type of blood in a timely manner. We believe that every donation can save lives and make a
+                    difference in
+                    our community.
+                </p>
+                <p>
+                    Our system allows donors to register easily, find recipients who match their blood type, and make
+                    informed decisions about their donations. By promoting a culture of giving and awareness, we aim to
+                    strengthen the bonds within our community and support those who are vulnerable.
+                </p>
+                <p>
+                    Join us in our mission to save lives, one donation at a time. Together, we can make a significant
+                    impact
+                    and ensure that no one in need goes without the blood they require.
+                </p>
+            </div>
+            <div class="about-image"></div>
+        </section>
+
+
+        <section class="about-us">
+            <div class="about-image-2"></div>
+            <div class="about-content">
+                <p>
+
+                    <span class="word">A</span>t our blood donation center, we are driven by a deep sense of compassion
+                    and commitment to
+                    community health. Every drop of blood donated represents hope, strength, and a chance at life for
+                    those in need. Our mission is to make blood donation an easy, comfortable, and impactful experience
+                    for donors while ensuring that every recipient receives safe and timely blood. We believe that
+                    everyone has the power to save lives, and we are here to make that possible.
+                </p>
+                <p>
+                    Our healthcare professionals work tirelessly to create a supportive environment for all. From
+                    registration to post-donation care, we prioritize safety and comfort. Your well-being is our top
+                    concern, with the highest standards of hygiene and care in place.
+                </p>
+                <p>
+                    By donating blood, you become part of a community that values generosity and selflessness. Your
+                    donation has the power to save lives and bring comfort to families. Join us in building a strong
+                    network of donors and recipients to make the world healthier, one donation at a time.
+                </p>
+            </div>
+
+        </section>
+
+
+
+
+        <!-- How it Works -->
+        <section class="how-it-works" id="how-it-works">
+            <div class="how-it-works-content">
+                <h2>How it Works</h2>
+                <p>Our Blood Donation System is designed to make the process of donating blood safe, simple, and effective. Whether you're a first-time donor or a regular contributor, here's how you can get involved:</p>
+                <div class="steps">
+                    <div class="step">
+                        <h3>Step 1: Register</h3>
+                        <p>Sign up on our platform as a donor or recipient. Provide essential details like your blood type, contact information, and medical history.</p>
+                    </div>
+                    <div class="step">
+                        <h3>Step 2: Find a Match</h3>
+                        <p>Once registered, you can easily find recipients in need of your blood type, or donors matching your requirements. Our system ensures compatibility for safe donations.</p>
+                    </div>
+                    <div class="step">
+                        <h3>Step 3: Donate</h3>
+                        <p>When you’ve found a match, you can proceed with the donation at one of our authorized centers. Our healthcare professionals ensure a safe and comfortable experience.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        
+        <!-- Our Services -->
+            <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <i class="fas fa-hand-holding-medical"></i>
+                <h3>Blood Donation</h3>
+                <p>Regular blood donation drives and permanent collection centers.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-search"></i>
+                <h3>Donor Search</h3>
+                <p>Quick search for compatible blood donors in your area.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-ambulance"></i>
+                <h3>Emergency Service</h3>
+                <p>24/7 emergency blood supply for critical situations.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-user-md"></i>
+                <h3>Medical Support</h3>
+                <p>Professional medical consultation and support.</p>
+            </div>
+        </div>
+    </section>
+<!-- out team -->
+<section class="team">
+    <div class="container">
+        <h2>Our Team</h2>
+        <div class="team-grid">
+            <div class="team-member">
+                <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=300&h=300" alt="Doctor">
+                <h3>Dr. Sarah Johnson</h3>
+                <p>Medical Director</p>
+            </div>
+            <div class="team-member">
+                <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=300&h=300" alt="Doctor">
+                <h3>Dr. Michael Chen</h3>
+                <p>Blood Bank Specialist</p>
+            </div>
+            <div class="team-member">
+                <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=300&h=300" alt="Doctor">
+                <h3>Dr. Emily Brown</h3>
+                <p>Community Outreach</p>
+            </div>
+        </div>
+    </div>
+</section>
+        <!-- Contact Us -->
+        <section class="contact-us" id="contact-us">
+            <div class="contact-container">
+                <h2>Contact Us</h2>
+                <p>If you have any questions or need assistance, feel free to reach out. We would love to hear from you!</p>
+    
+                <div class="contact-info">
+                    <div class="info">
+                        <h3>Our Location</h3>
+                        <p>University of Engineering and Technology Lahore, Narowal Campus Narowal-Muridke Road</p>
+                    </div>
+    
+                    <div class="info">
+                        <h3>Phone</h3>
+                        <p>+92 3413348205</p>
+                    </div>
+    
+                    <div class="info">
+                        <h3>Email</h3>
+                        <p>@blooddonorsystem.com</p>
+                    </div>
+                </div>
+    
+                <form action="#" method="POST" class="contact-form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Enter your message" rows="5" required></textarea>
+    
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-left">
+            <h3>Blood Donation System</h3>
+            <p>Your health, our priority. Donate blood, save lives.</p>
+        </div>
+        
+        <div class="footer-center">
+            <h4>Contact Information</h4>
+            <ul>
+                <li><strong>Phone:</strong> +92 3413348205</li>
+                <li><strong>Email:</strong> @blooddonorsystem.com</li>
+                <li><strong>Address:</strong> University of Engineering and Technology Lahore, Narowal Campus</li>
+            </ul>
+        </div>
+        
+        <div class="footer-right">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="/Home.html">Home</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
+                
+            </ul>
+            
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+                <a href="#" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 Blood Donation System. All rights reserved.</p>
+    </div>
+</footer>
+
+
+
+<script src="home.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .confirmation-container {
+    text-align: center;
+    padding: 20px;
+    max-width: 500px;
+    width: 90%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .confirmation-container h1 {
+    font-size: 24px;
+    color: #4CAF50;
+    margin-bottom: 10px;
+  }
+  
+  .confirmation-container p {
+    font-size: 18px;
+    color: #333;
+  }
+  
